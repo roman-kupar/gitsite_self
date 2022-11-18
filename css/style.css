@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background-image{
+    background-image: url('../space.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+nav{
+    margin: 27px auto 0;
+    position:relative;
+    width:470px;
+    height:50px;
+    background-color:#34495e;
+    border-radius:8px;
+    font-size:0;
+}
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size:15px;
+    display:inline-block;
+    position:relative;
+    z-index:1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align:center;
+    color:white;
+    cursor:pointer;
+}
+nav .animation {
+    position:absolute;
+    height:100%;
+    top:0;
+    z-index:0;
+    transition:all .5s ease 0s;
+    border-radius:8px;
+}
+a:nth-child(1){
+    width:100px;
+}
+a:nth-child(2){
+    width:110px;
+}
+a:nth-child(3){
+    width:100px;
+}
+a:nth-child(4){
+    width:160px;
+}
+nav.start-github, a:nth-child(1):hover~.animation {
+    width:100px ;
+    left:0;
+    background-color: darkblue;
+}
+nav.start-universe, a:nth-child(2):hover~.animation {
+    width:110px;
+    left:100px;
+    background-color:#e74c3c;
+}
+nav.start-articvault, a:nth-child(3):hover~.animation{
+    width:100px;
+    left:210px;
+    background-color:#3490db;
+}
+nav.start-codespaces, a:nth-child(4):hover~.animation{
+    width:160px;
+    left:310px;
+    background-color: #9b59b6;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.flex-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 25px;
+    font-size: 1.2rem;
+}
+
+p {
+    color:rgb(255, 255, 255);
+    text-align:center;
+}
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    background: #121FCF;
+    background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+body {
+    font-size:12px;
+    font-family: sans-serif;
+    align-items: center;
+	justify-content: center;
+
+}
+span {
+    color:#2BD6B4;
+}
